@@ -1,0 +1,46 @@
+﻿@model WebApplication1.Models.Class1
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <h2>Aplikacja</h2>
+
+    <div class="row">
+
+        @using (Html.BeginForm("/Index", "Class1", FormMethod.Post))
+        {
+
+            <div class="form-group">
+                <label for="jeden">Jeden</label>
+                <input type="text" class="form-control" id="jeden" name="jeden" value="@Model.jeden" />
+            </div>
+
+            <div class="form-group">
+                <label for="dwa">Dwa</label>
+                <input type="text" class="form-control" id="dwa" name="dwa" value="@Model.dwa" />
+            </div>
+
+            <div class="form-group">
+                <label for="trzy">Trzy</label>
+                <input type="text" class="form-control" id="trzy" name="trzy" value="@Model.trzy" />
+            </div>
+
+            <button type="submit" class="btn btn-info" id="add" value="add" name="wykonaj">+</button>
+            <button type="submit" class="btn btn-info" id="min" value="min" name="wykonaj">-</button>
+
+        }
+    </div>
+</body>
+
+</html>
