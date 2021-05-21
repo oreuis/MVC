@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebApplication1.Models
 {
-    public class Class1
+    public class myclass
     {
         public int jeden { get; set; }
 

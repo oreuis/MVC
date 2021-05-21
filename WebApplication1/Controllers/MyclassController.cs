@@ -7,20 +7,19 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class NController : Controller
+    public class MyclassController : Controller
     {
-        // GET: N
+        // GET: Myclass
         public ActionResult Index()
         {
-            return View(new Class1()); 
+            return View(new myclass());
         }
-
 
         [HttpPost]
 
-        public ActionResult Index(Class1 c,string wykonaj)
+        public ActionResult Index(myclass c, string wykonaj)
         {
-            if(wykonaj == "add")
+            if (wykonaj == "add")
             {
                 c.trzy = c.jeden + c.dwa;
             }
