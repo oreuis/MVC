@@ -20,22 +20,22 @@
         {
 
             <div class="form-group">
-                <label for="jeden">Pierwsza liczba</label>
+                <label for="jeden">Wybierz swoją nazwę</label>
                 <input type="text" class="form-control" id="jeden" name="jeden" value="@Model.jeden" />
             </div>
 
-            <div class="form-group">
-                <label for="dwa">Druga liczba</label>
-                <input type="text" class="form-control" id="dwa" name="dwa" value="@Model.dwa" />
+
+            <div id="wyb">
+                <h4>Wybierz</h4>
+                <button type="submit" class="btn btn-info" id="add" value="p1" name="wykonaj">pocztowka.pl</button>
+                <button type="submit" class="btn btn-info" id="min" value="p2" name="wykonaj">poczta.eu</button>
+                <button type="submit" class="btn btn-info" id="min" value="p3" name="wykonaj">pczt.pl</button>
             </div>
 
             <div class="form-group">
-                <label for="trzy">Wynik</label>
+                <label for="trzy">Twój adres</label>
                 <input type="text" class="form-control" id="trzy" name="trzy" value="@Model.trzy" />
             </div>
-
-            <button type="submit" class="btn btn-info" id="add" value="add" name="wykonaj">Dodaj</button>
-            <button type="submit" class="btn btn-info" id="min" value="min" name="wykonaj">Odejmij</button>
 
         }
     </div>

@@ -19,14 +19,25 @@ namespace WebApplication1.Controllers
 
         public ActionResult Index(myclass c, string wykonaj)
         {
-            if (wykonaj == "add")
+            if (wykonaj == "p1")
             {
-                c.trzy = c.jeden + c.dwa;
+                c.dwa = "@";
+                c.cztery = "pocztowka.pl";
+                c.trzy = c.jeden + c.dwa + c.cztery;
             }
 
-            else if (wykonaj == "min")
+            else if (wykonaj == "p2")
             {
-                c.trzy = c.jeden - c.dwa;
+                c.dwa = "@";
+                c.cztery = "poczta.eu";
+                c.trzy = c.jeden + c.dwa + c.cztery;
+            }
+
+            else
+            {
+                c.dwa = "@";
+                c.cztery = "pczt.pl";
+                c.trzy = c.jeden + c.dwa + c.cztery;
             }
 
             return View(c);
